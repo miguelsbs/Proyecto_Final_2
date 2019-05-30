@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="temas_img">
+      <item>Temas</item>
+      <item>Boda</item>
+      <item>Cita de Negocios</item>
+      <item>Cita Romantica</item>
+      <item>Comida</item>
+      <item>Compras</item>
+      <item>Concierto</item>
+      <item>Cumpleaños</item>
+      <item>Estudios</item>
+      <item>Examen</item>
+      <item>Médico</item>
+      <item>Oficina</item>
+      <item>Partido</item>
+      <item>Reunión Amigos</item>
+      <item>Reunión Familiar</item>
+      <item>Vacaciones</item>
+      <item>Viaje</item>
+  </string-array>
+</resources>

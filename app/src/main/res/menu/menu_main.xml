@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ischedule.MainActivity">
+
+    <item
+        android:id="@+id/action_info"
+        android:orderInCategory="100"
+        android:title="@string/info_datos"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_conexion"/>
+
+    <item
+        android:id="@+id/action_favoritos"
+        android:orderInCategory="100"
+        android:title="@string/favoritos"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_fav"
+        android:onClick="favoritos"/>
+
+    <item
+        android:id="@+id/action_nofav"
+        android:orderInCategory="100"
+        android:title="@string/favoritos"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_no_fav"
+        android:onClick="favoritosNo"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_job"
+        android:orderInCategory="100"
+        android:title="@string/eventos_del_dia"
+        app:showAsAction="never" />
+</menu>

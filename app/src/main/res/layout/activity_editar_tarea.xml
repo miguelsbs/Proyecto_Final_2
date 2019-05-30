@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_editar_tarea">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BAC7C6C7"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tV_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/allan"
+                android:gravity="center"
+                android:text="@string/txt1"
+                android:textColor="#9C27B0"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eT_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:fontFamily="@font/allan"
+                android:hint="@string/titulo"
+                android:inputType="textPersonName"
+                android:saveEnabled="false"
+                android:textAllCaps="false"
+                android:textColor="#3F51B5"
+                android:textColorHint="#3F51B5"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/eT_descrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:fontFamily="@font/allan"
+                android:hint="@string/descripcion"
+                android:inputType="textPersonName"
+                android:textColor="#3F51B5"
+                android:textColorHint="#3F51B5"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eT_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:fontFamily="@font/allan"
+                android:hint="@string/dia"
+                android:inputType="date"
+                android:textColor="#3F51B5"
+                android:textColorHint="#3F51B5"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eT_horas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:fontFamily="@font/allan"
+                android:hint="@string/hora"
+                android:inputType="time"
+                android:textColor="#3F51B5"
+                android:textColorHint="#3F51B5"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eT_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:fontFamily="@font/allan"
+                android:hint="@string/web"
+                android:inputType="textPersonName"
+                android:textColor="#3F51B5"
+                android:textColorHint="#3F51B5"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/allan"
+                    android:textColor="#3F51B5" />
+
+                <Switch
+                    android:id="@+id/sw_Fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="Favorito"
+                    tools:checked="false" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tFav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#9C27B0"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/allan" />
+
+            <Button
+                android:id="@+id/btnCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/allan"
+                android:onClick="crearEvento"
+                android:text="Crear"
+                android:textAlignment="center"
+                android:textColor="#9C27B0"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/allan"
+                android:text="Actualizar"
+                android:textAlignment="center"
+                android:textColor="#9C27B0"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
